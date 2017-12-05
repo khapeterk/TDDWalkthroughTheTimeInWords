@@ -17,4 +17,7 @@ describe('a function for the time in words', () => {
   it('should translate 5:45 to quarter to six', () => {
     expect(theTimeInWords('5:45')).toBe('quarter to six')
   })
+  it('should translate 5:40 to twenty minutes to six', () => {
+    expect(theTimeInWords('5:40')).toBe('twenty minutes to six')
+  })
 })
