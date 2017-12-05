@@ -6,10 +6,12 @@ function theTimeInWords(time) {
   let minutesConversion = {
     '01': 'one minute',
     '10': 'ten minutes',
+    '28': 'twenty eight minutes',
     '15': 'quarter',
     '30': 'half',
     '40': 'twenty minutes',
     '45': 'quarter',
+    '47': 'thirteen minutes',    
   }
   if (parseInt(timeMinutes) > 30) {
     pastString = ' to '
