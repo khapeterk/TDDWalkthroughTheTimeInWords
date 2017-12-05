@@ -2,10 +2,14 @@ function theTimeInWords(time) {
   let hour = 'five'
   let pastString = ' past '
   if (time === '5:15') {
-    return 'quarter' + pastString + hour
+    let minutes = 'quarter'
+    return minutes + pastString + hour
   }
   if (time === '5:30') {
-    return 'half' + pastString + hour    
+    let minutes = 'half'
+    return minutes + pastString + hour    
   }
-  return hour + ' o\' clock'
+  if (time === '5:00') {
+    return hour + ' o\' clock'    
+  }
 }
