@@ -3,6 +3,11 @@ function theTimeInWords(time) {
   let hour = 'five'
   let pastString = ' past '
   let minutes
+  let minutesConversion = {
+    '01': 'one minute',
+    '15': 'quarter',
+    '30': 'half'
+  }
   if (timeMinutes === '00') {
     return hour + ' o\' clock'    
   }
