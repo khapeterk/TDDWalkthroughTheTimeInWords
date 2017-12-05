@@ -1,6 +1,7 @@
 function theTimeInWords(time) {
+  let hour = 'five'
   if (time === '5:30') {
-    return 'half past five'    
+    return 'half past ' + hour    
   }
-  return 'five o\' clock'
+  return hour + ' o\' clock'
 }
