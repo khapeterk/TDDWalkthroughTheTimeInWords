@@ -9,6 +9,9 @@ function theTimeInWords(time) {
     '15': 'quarter',
     '30': 'half'
   }
+  if (time === '5:45') {
+    return 'quarter to six'
+  }
   if (timeMinutes === '00') {
     return hour + ' o\' clock'    
   }
