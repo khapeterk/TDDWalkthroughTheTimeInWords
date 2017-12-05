@@ -8,9 +8,10 @@ function theTimeInWords(time) {
     '10': 'ten minutes',
     '15': 'quarter',
     '30': 'half',
-    '45': 'quarter'
+    '40': 'twenty minutes',
+    '45': 'quarter',
   }
-  if (timeMinutes === '45') {
+  if (timeMinutes === '40' || timeMinutes === '45') {
     return minutesConversion[timeMinutes] + ' to six'
   }
   if (timeMinutes === '00') {
