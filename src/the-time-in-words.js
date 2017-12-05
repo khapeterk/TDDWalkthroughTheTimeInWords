@@ -12,13 +12,13 @@ function theTimeInWords(time) {
     return hour + ' o\' clock'    
   }
   if (timeMinutes === '01') {
-    minutes = 'one minute'
+    minutes = minutesConversion[timeMinutes]
   }
   if (timeMinutes === '15') {
-    minutes = 'quarter'
+    minutes = minutesConversion[timeMinutes]
   }
   if (timeMinutes === '30') {
-    minutes = 'half'
+    minutes = minutesConversion[timeMinutes]
   }
   return minutes + pastString + hour    
   
