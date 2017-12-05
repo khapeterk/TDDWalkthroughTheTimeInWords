@@ -1,17 +1,18 @@
 function theTimeInWords(time) {
+  let timeMinutes = time.slice(2);
   let hour = 'five'
   let pastString = ' past '
   let minutes
-  if (time === '5:00') {
+  if (timeMinutes === '00') {
     return hour + ' o\' clock'    
   }
-  if (time === '5:01') {
+  if (timeMinutes === '01') {
     minutes = 'one minute'
   }
-  if (time === '5:15') {
+  if (timeMinutes === '15') {
     minutes = 'quarter'
   }
-  if (time === '5:30') {
+  if (timeMinutes === '30') {
     minutes = 'half'
   }
   return minutes + pastString + hour    
