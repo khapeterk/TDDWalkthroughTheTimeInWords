@@ -12,7 +12,9 @@ function theTimeInWords(time) {
     '45': 'quarter',
   }
   if (parseInt(timeMinutes) > 30) {
-    return minutesConversion[timeMinutes] + ' to six'
+    let toString = ' to '
+    hour = 'six'
+    return minutesConversion[timeMinutes] + toString + hour
   }
   if (timeMinutes === '00') {
     return hour + ' o\' clock'    
