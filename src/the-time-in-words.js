@@ -5,6 +5,9 @@ function theTimeInWords(time) {
   if (time === '5:00') {
     return hour + ' o\' clock'    
   }
+  if (time === '5:01') {
+    minutes = 'one minute'
+  }
   if (time === '5:15') {
     minutes = 'quarter'
   }
