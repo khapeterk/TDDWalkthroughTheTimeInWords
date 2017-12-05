@@ -11,7 +11,7 @@ function theTimeInWords(time) {
     '40': 'twenty minutes',
     '45': 'quarter',
   }
-  if (timeMinutes === '40' || timeMinutes === '45') {
+  if (parseInt(timeMinutes) > 30) {
     return minutesConversion[timeMinutes] + ' to six'
   }
   if (timeMinutes === '00') {
