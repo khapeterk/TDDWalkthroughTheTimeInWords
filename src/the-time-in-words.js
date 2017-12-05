@@ -5,6 +5,7 @@ function theTimeInWords(time) {
   let minutes
   let minutesConversion = {
     '01': 'one minute',
+    '10': 'ten minutes',
     '15': 'quarter',
     '30': 'half'
   }
